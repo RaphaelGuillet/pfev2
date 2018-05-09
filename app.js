@@ -21,7 +21,6 @@ function onYouTubeIframeAPIReady() {
     .fromTo('section#chapitre-2aa', 10, { y: '100%' }, { y: '-100%'}) // From right
     .fromTo('section#chapitre-3', 1, { y: '100%' }, { y: '0%'})// From right
     .fromTo('section#chapitre-3b', 10, { y: '100%' }, { y: '-100%'})// From right
-    .fromTo('section#chapitre-3bis', 10, { y: '100%' }, { y: '-100%'})// From right
     .fromTo('section#chapitre-5', 1, { y: '100%' }, { y: '0%'})// From right
     .fromTo('section#chapitre-5b', 10, { y: '100%' }, { y: '-100%'})// From right
     .fromTo('section#chapitre-max', 1, { y: '100%' }, { y: '0%'})// From right
@@ -30,8 +29,6 @@ function onYouTubeIframeAPIReady() {
     .fromTo('section#chapitre-storyb', 10, { y: '100%' }, { y: '-100%'})// From right
     .fromTo('section#chapitre-barode', 1, { y: '100%' }, { y: '0%'})// From right
     .fromTo('section#chapitre-barodeb', 10, { y: '100%' }, { y: '-100%'})// From right
-    .fromTo('section#chapitre-credit', 1, { y: '100%' }, { y: '0%'})// From right
-    .fromTo('section#chapitre-creditb', 10, { y: '100%' }, { y: '0%'})// From right
 
   // create a scene
   mainScene = new ScrollMagic.Scene({
@@ -91,36 +88,6 @@ function initPlayer(id) {
 
 function scrollScene() {
   const progress = mainScene.progress()
-
-  if (progress < (1/25) && progress < (3/25)) {
-    startVideo('intro')
-  } else {
-    stopVideo('intro')
-  }
-
-  if (progress > (5/25) && progress < (8/25)) {
-    startVideo('chapitre-2c')
-  } else {
-    stopVideo('chapitre-2c')
-  }
-
-  if (progress > (10/25) && progress < (13/25)) {
-    startVideo('chapitre-21')
-  } else {
-    stopVideo('chapitre-21')
-  }
-
-  if (progress > (18/25) && progress < (20/25)) {
-    startVideo('chapitre-story')
-  } else {
-    stopVideo('chapitre-story')
-  }
-
-  if (progress > (21/25) && progress < (23/25)) {
-    startVideo('chapitre-barode')
-  } else {
-    stopVideo('chapitre-barode')
-  }
 }
 
 function resizeVideo(id) {
