@@ -122,6 +122,13 @@ section .content {
 
 blockquote {
   color: black;
+  width: 90%;
+  margin: 0 20px;
+}
+
+blockquote p {
+  font-size: xx-large;
+  font-style: italic;
 }
 
 section .content-center {  
