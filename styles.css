@@ -42,6 +42,15 @@ h2 {
   text-shadow: 2px 2px 2px #000000;
 }
 
+h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-stretch: expanded;
+  font-size: 4vh;
+  text-align: bottom;
+  color: black;
+}
+
 /*PB : comment faire la marge plus petite sur mobile que sur desktop + sans couper le texte;*/
 p {
   font-size: 3vh;
@@ -110,6 +119,10 @@ section .content {
   color: black;
 }
 
+blockquote {
+  color: black;
+}
+
 section .content-center {  
   display: flex;
   justify-content: center;
@@ -151,36 +164,3 @@ section#intro .content {
   width: 100%;
   height: 100%;
 }
-
-
-
-/*
-blockquote.fade-up {
-  height:100vh;
-  margin-bottom:-500px;
-  margin-top: 200px;
-  transition:all ease-out 2s 0s;  
-    }
-
-
-.fade-ani {
-  opacity:0;
-  position:relative
-}
-.fade-up {
-  bottom:-300px;
-}
-
-
-.fade-down {
-  top:50px;
-}
-
-
-.fade-ani.showing{}
-    .fade-in.showing{opacity:1;}
-    .fade-up.showing{bottom:0px;opacity:1;}
-    .fade-down.hiding{top:-0px;opacity:1;} 
-
-*/
-

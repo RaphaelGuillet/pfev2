@@ -28,7 +28,6 @@ function onYouTubeIframeAPIReady() {
     .fromTo('section#chapitre-story', 8, { y: '100%' }, { y: '0%'})// From right
     .fromTo('section#chapitre-storyb', 10, { y: '100%' }, { y: '-100%'})// From right
     .fromTo('section#chapitre-barode', 8, { y: '100%' }, { y: '0%'})// From right
-    .fromTo('section#chapitre-barodeb', 10, { y: '100%' }, { y: '-100%'})// From right
 
   // create a scene
   mainScene = new ScrollMagic.Scene({
@@ -42,71 +41,8 @@ function onYouTubeIframeAPIReady() {
     .addTo(controller); 
 }
 
-function startVideo(chapitre) {
-  var id = $(document.getElementById(chapitre)).find('[data-video-id]').attr('id')
-  if (players[chapitre]) {
-    players[chapitre].playVideo()
-  } else {
-    players[chapitre] = initPlayer(id)
-  }
-}
-
-
-function stopVideo(chapitre) {
-  if (players[chapitre] && players[chapitre].pauseVideo) {    
-    players[chapitre].pauseVideo()
-  }
-}
-
-function initPlayer(id) {
-  var element = $("#" + id)
-
-  return new YT.Player(id, {
-    height: '100%',
-    width: '100%',
-    videoId: element.data('video-id'),
-    playerVars: {
-      autoplay: 1, 
-      controls: 0,
-      loop: 1,
-      playlist: element.data('video-id'),
-      showinfo: 0,
-      modestbranding: 1
-    },
-    events: {
-      'onReady': function(event) {
-        if (isMobile()) {
-          event.target.mute()
-        }
-        event.target.playVideo();
-        scrollScene()
-        resizeVideo(id)
-      }
-    }
-  });
-}
-
 function scrollScene() {
   const progress = mainScene.progress()
-}
-
-function resizeVideo(id) {
-  var video = $('#' + id);
-
-  if(window.innerWidth > window.innerHeight) {    
-    var newWidth = video.outerHeight() * (16  / 9);
-    var scale = window.innerWidth / newWidth
-    video.css('width', newWidth + "px")
-    video.css('transform-origin', 'left center')
-  } else { 
-    var newHeight = video.outerWidth() * (9 / 16);
-    var scale = window.innerHeight / newHeight
-    video.css('height', newHeight + "px")
-    video.css('transform-origin', 'center top')
-  }
-  
-  //Define the new width and centrally align the iframe
-  video.css("transform", "scale(" + scale + ")");
 }
 
 function isMobile()  {
