@@ -54,7 +54,7 @@ h3 {
 
 /*PB : comment faire la marge plus petite sur mobile que sur desktop + sans couper le texte;*/
 p {
-  font-size: 2vh;
+  font-size: 2.5vh;
   padding: 0 5vw;
 }
 
