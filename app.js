@@ -11,6 +11,7 @@ function onYouTubeIframeAPIReady() {
     .fromTo('section#chapitre-1b', 12, { y: '100%' }, { y: '-100%'}) // From bottom
     .fromTo('section#chapitre-1c', 12, { y: '100%' }, { y: '0%'}) // From bottom
     .fromTo('section#chapitre-1d', 12, { y: '100%' }, { y: '-100%'}) // From bottom
+    .fromTo('section#chapitre-1e', 12, { y: '100%' }, { y: '-100%'}) // From bottom
     .fromTo('section#chapitre-2', 12, { y: '100%' }, { y: '0%'}) // From right
     .fromTo('section#chapitre-2a', 12, { y: '100%' }, { y: '-100%'}) // From right
     .fromTo('section#chapitre-2b', 12, { y: '100%' }, { y: '0%'}) // From right
