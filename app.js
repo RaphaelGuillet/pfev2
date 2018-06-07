@@ -7,27 +7,31 @@ function onYouTubeIframeAPIReady() {
   var controller = new ScrollMagic.Controller();
 
   var wipeAnimation = new TimelineMax()
-    .fromTo('section#chapitre-1a', 8, { y: '100%' }, { y: '0%'}) // From bottom
-    .fromTo('section#chapitre-1b', 10, { y: '100%' }, { y: '-100%'}) // From bottom
-    .fromTo('section#chapitre-2', 8, { y: '100%' }, { y: '0%'}) // From right
-    .fromTo('section#chapitre-2a', 10, { y: '100%' }, { y: '-100%'}) // From right
-    .fromTo('section#chapitre-2b', 8, { y: '100%' }, { y: '0%'}) // From right
-    .fromTo('section#chapitre-2bb', 10, { y: '100%' }, { y: '-100%'}) // From right
-    .fromTo('section#chapitre-2c', 8, { y: '100%' }, { y: '0%'}) // From right
-    .fromTo('section#chapitre-2cc', 10, { y: '100%' }, { y: '-100%'}) // From right
-    .fromTo('section#chapitre-2d', 8, { y: '100%' }, { y: '0%'}) // From right
-    .fromTo('section#chapitre-2dd', 10, { y: '100%' }, { y: '-100%'}) // From right
-    .fromTo('section#chapitre-21', 8, { y: '100%' }, { y: '0%'}) // From right
-    .fromTo('section#chapitre-2aa', 10, { y: '100%' }, { y: '-100%'}) // From right
-    .fromTo('section#chapitre-3', 8, { y: '100%' }, { y: '0%'})// From right
-    .fromTo('section#chapitre-3b', 10, { y: '100%' }, { y: '-100%'})// From right
-    .fromTo('section#chapitre-5', 8, { y: '100%' }, { y: '0%'})// From right
-    .fromTo('section#chapitre-5b', 10, { y: '100%' }, { y: '-100%'})// From right
-    .fromTo('section#chapitre-max', 8, { y: '100%' }, { y: '0%'})// From right
-    .fromTo('section#chapitre-maxb', 10, { y: '100%' }, { y: '-100%'})// From right
-    .fromTo('section#chapitre-story', 8, { y: '100%' }, { y: '0%'})// From right
-    .fromTo('section#chapitre-storyb', 10, { y: '100%' }, { y: '-100%'})// From right
-    .fromTo('section#chapitre-barode', 8, { y: '100%' }, { y: '0%'})// From right
+    .fromTo('section#chapitre-1a', 12, { y: '100%' }, { y: '0%'}) // From bottom
+    .fromTo('section#chapitre-1b', 12, { y: '100%' }, { y: '-100%'}) // From bottom
+    .fromTo('section#chapitre-1c', 12, { y: '100%' }, { y: '0%'}) // From bottom
+    .fromTo('section#chapitre-1d', 12, { y: '100%' }, { y: '-100%'}) // From bottom
+    .fromTo('section#chapitre-2', 12, { y: '100%' }, { y: '0%'}) // From right
+    .fromTo('section#chapitre-2a', 12, { y: '100%' }, { y: '-100%'}) // From right
+    .fromTo('section#chapitre-2b', 12, { y: '100%' }, { y: '0%'}) // From right
+    .fromTo('section#chapitre-2bb', 12, { y: '100%' }, { y: '-100%'}) // From right
+    .fromTo('section#chapitre-2c', 12, { y: '100%' }, { y: '0%'}) // From right
+    .fromTo('section#chapitre-2cc', 12, { y: '100%' }, { y: '-100%'}) // From right
+    .fromTo('section#chapitre-2d', 12, { y: '100%' }, { y: '0%'}) // From right
+    .fromTo('section#chapitre-2dd', 12, { y: '100%' }, { y: '-100%'}) // From right
+    .fromTo('section#chapitre-21', 12, { y: '100%' }, { y: '0%'}) // From right
+    .fromTo('section#chapitre-2aa', 12, { y: '100%' }, { y: '-100%'}) // From right
+    .fromTo('section#chapitre-3', 12, { y: '100%' }, { y: '0%'})// From right
+    .fromTo('section#chapitre-3b', 12, { y: '100%' }, { y: '-100%'})// From right
+    .fromTo('section#chapitre-5', 12, { y: '100%' }, { y: '0%'})// From right
+    .fromTo('section#chapitre-5b', 12, { y: '100%' }, { y: '-100%'})// From right
+    .fromTo('section#chapitre-6a', 12, { y: '100%' }, { y: '0%'})// From right
+    .fromTo('section#chapitre-6b', 12, { y: '100%' }, { y: '-100%'})// From right
+    .fromTo('section#chapitre-max', 12, { y: '100%' }, { y: '0%'})// From right
+    .fromTo('section#chapitre-maxb', 12, { y: '100%' }, { y: '-100%'})// From right
+    .fromTo('section#chapitre-story', 12, { y: '100%' }, { y: '0%'})// From right
+    .fromTo('section#chapitre-storyb', 12, { y: '100%' }, { y: '-100%'})// From right
+    .fromTo('section#chapitre-barode', 12, { y: '100%' }, { y: '0%'})// From right
 
   // create a scene
   mainScene = new ScrollMagic.Scene({
