@@ -15,6 +15,7 @@
 
 
 html, body {
+  height: 200vh;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -53,7 +54,7 @@ h3 {
 
 /*PB : comment faire la marge plus petite sur mobile que sur desktop + sans couper le texte;*/
 p {
-  font-size: 3vh;
+  font-size: 2vh;
   padding: 0 5vw;
 }
 
@@ -67,6 +68,7 @@ main article p span.format-quote {
 }
 
 .panel-body {
+
   max-width: 800px;
   margin: auto;
   padding: 20px;
